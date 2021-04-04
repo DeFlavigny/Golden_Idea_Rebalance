@@ -1,0 +1,24 @@
+##triggered modifiers for ideas in Golden's Idea Rebalance
+
+perfect_plan_active = {
+	potential = {
+		has_idea = vetting
+	}
+
+	trigger = {
+		has_idea = vetting
+		calc_true_if = {
+			all_country = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 75
+				}
+			}
+			amount = 3
+		}
+	}
+
+	country_military_power = 1
+	country_admin_power = 1
+	country_diplomatic_power = 1
+}
